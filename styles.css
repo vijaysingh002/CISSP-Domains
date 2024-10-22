@@ -1,0 +1,138 @@
+/* General body styling */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scroll bars */
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+/* Canvas matrix styling */
+#matrixCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the canvas stays in the background */
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the hacker box with glowing effect */
+.hacker-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00ff00;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00; /* Initial green glow */
+    animation: glowCycle 5s infinite alternate; /* Glowing color change effect */
+    z-index: 1;
+    text-align: center;
+}
+
+/* Glowing effect with color transition for the box */
+@keyframes glowCycle {
+    0% {
+        box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+        border-color: #00ff00;
+    }
+    25% {
+        box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff, 0 0 45px #ff00ff;
+        border-color: #ff00ff;
+    }
+    50% {
+        box-shadow: 0 0 15px #0000ff, 0 0 30px #0000ff, 0 0 45px #0000ff;
+        border-color: #0000ff;
+    }
+    75% {
+        box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000, 0 0 45px #ff0000;
+        border-color: #ff0000;
+    }
+    100% {
+        box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+        border-color: #00ff00;
+    }
+}
+
+/* Styling for the main title (CISSP typing effect) */
+h1 {
+    font-size: 5rem;
+    color: #00ff00;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 2rem;
+    color: #00ff00;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Ordered list styling */
+ol {
+    font-size: 2rem;
+    color: #00ff00;
+    margin: 0 auto;
+    padding-left: 40px;
+    list-style-type: decimal;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+/* Glitch effect for domain names (the strong tags) */
+ol li strong {
+    color: #ff00ff; /* Magenta color for domain names */
+    position: relative;
+    animation: glitch 1s infinite; /* Apply glitch effect */
+}
+
+/* Glitch animation */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px #ff00ff, -2px -2px #00ff00;
+        clip-path: inset(0% 0% 0% 0%);
+        transform: skew(0deg);
+    }
+    20% {
+        text-shadow: -2px -2px #ff00ff, 2px 2px #00ff00;
+        clip-path: inset(10% 0% 85% 0%);
+        transform: skew(5deg);
+    }
+    40% {
+        text-shadow: 2px 2px #ff00ff, -2px -2px #00ff00;
+        clip-path: inset(50% 0% 0% 0%);
+        transform: skew(-5deg);
+    }
+    60% {
+        text-shadow: -2px -2px #ff00ff, 2px 2px #00ff00;
+        clip-path: inset(0% 0% 50% 0%);
+        transform: skew(2deg);
+    }
+    80% {
+        text-shadow: 2px 2px #ff00ff, -2px -2px #00ff00;
+        clip-path: inset(30% 0% 10% 0%);
+        transform: skew(-2deg);
+    }
+    100% {
+        text-shadow: 0px 0px #ff00ff, 0px 0px #00ff00;
+        clip-path: inset(0% 0% 0% 0%);
+        transform: skew(0deg);
+    }
+}
+
+/* Hover effect for domain definitions (normal text after strong tags) */
+ol li:hover {
+    color: #00ff00; /* Change color to bright green */
+    transition: color 0.3s ease-in-out;
+}
+
+/* List item styling */
+ol li {
+    margin-bottom: 20px;
+    color: #ffffff; /* Default white color for definitions */
+    font-weight: normal; /* Normal weight for definitions */
+}
