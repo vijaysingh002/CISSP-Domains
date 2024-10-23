@@ -11,19 +11,66 @@
 
     <div class="hacker-box">
         <h1 id="typewriter"></h1> <!-- Typing effect will happen here -->
-
-        <p>The CISSP (Certified Information Systems Security Professional) certification consists of 8 domains:</p>
-        <ol>
-            <li><strong>Security and Risk Management:</strong> Focuses on the principles of security, risk, and compliance.</li>
-            <li><strong>Asset Security:</strong> Protecting data and assets to ensure confidentiality, integrity, and availability.</li>
-            <li><strong>Communication and Network Security:</strong> Securing network architecture and ensuring safe data transfer.</li>
-            <li><strong>Security Architecture and Engineering:</strong> Designing and building secure systems.</li>
-            <li><strong>Identity and Access Management (IAM):</strong> Controlling user access and protecting user identities.</li>
-            <li><strong>Security Operations:</strong> Managing and monitoring security operations and incident responses.</li>
-            <li><strong>Security Assessment and Testing:</strong> Evaluating and testing the effectiveness of security measures.</li>
-            <li><strong>Software Development Security:</strong> Securing the software development process.</li>
-        </ol>
+    
+        <div class="cissp-domains">
+            <!-- Security and Risk Management Domain -->
+            <div class="domain-item">
+                <h2>Security and Risk Management</h2>
+                <p>This domain focuses on identifying and managing risks to an organization’s information systems. It includes developing security policies, conducting risk assessments, and ensuring compliance with laws and regulations.</p>
+                <p><b>Example: </b>Implementing a policy that requires encryption for all sensitive customer data to mitigate the risk of a data breach.</p>
+            </div>
+    
+            <!-- Asset Security Domain -->
+            <div class="domain-item">
+                <h2>Asset Security</h2>
+                <p>Asset Security involves the proper handling and protection of organizational assets, including both physical and digital data. This domain covers the classification, storage, retention, and destruction of data throughout its lifecycle. Ensuring confidentiality, integrity, and availability of data is key.</p>
+                <p><b>Example: </b>Implementing a data classification policy that ensures sensitive data is handled securely and only accessible to authorized personnel. Securing backups in off-site locations for disaster recovery purposes.</p>
+            </div>
+    
+            <!-- Communication and Network Security Domain -->
+            <div class="domain-item">
+                <h2>Communication and Network Security</h2>
+                <p>This domain focuses on securing network infrastructures, communication channels, and protecting data transmitted across these networks. It covers designing secure network architectures, managing external connections, and applying encryption to ensure data safety during transmission.</p>
+                <p><b>Example: </b>Using a Virtual Private Network (VPN) to securely connect remote employees to internal corporate systems, ensuring encrypted communication over the internet.</p>
+            </div>
+    
+            <!-- Security Architecture and Engineering Domain -->
+            <div class="domain-item">
+                <h2>Security Architecture and Engineering</h2>
+                <p>Security Architecture and Engineering focus on designing secure systems and infrastructures that incorporate security controls to protect hardware, software, and networks. This includes applying security principles like defense-in-depth, least privilege, and zero trust models.</p>
+                <p><b>Example: </b>Implementing multi-layered security controls like firewalls, intrusion detection systems, and encryption to safeguard critical systems and data from cyber threats.</p>
+            </div>
+    
+            <!-- Identity and Access Management (IAM) Domain -->
+            <div class="domain-item">
+                <h2>Identity and Access Management (IAM)</h2>
+                <p>Identity and Access Management ensures that only authorized individuals have access to specific resources within the organization. This includes processes for identification, authentication, authorization, and accountability to manage user identities and permissions securely.</p>
+                <p><b>Example: </b>Implementing multi-factor authentication (MFA) for accessing sensitive systems, requiring users to verify their identity through multiple forms of authentication.</p>
+            </div>
+    
+            <!-- Security Operations Domain -->
+            <div class="domain-item">
+                <h2>Security Operations</h2>
+                <p>Security Operations involve continuous monitoring, managing security incidents, and responding to breaches. This domain ensures that security controls are effectively enforced, incidents are handled quickly, and post-incident investigations are carried out to improve future security posture.</p>
+                <p><b>Example: </b>Deploying a Security Information and Event Management (SIEM) system to detect and respond to unusual activities that could indicate a cyber attack.</p>
+            </div>
+    
+            <!-- Security Assessment and Testing Domain -->
+            <div class="domain-item">
+                <h2>Security Assessment and Testing</h2>
+                <p>This domain involves evaluating and testing the effectiveness of security measures. It includes security audits, vulnerability assessments, and penetration testing to identify weaknesses in systems and ensure security controls are functioning as intended.</p>
+                <p><b>Example: </b>Conducting regular penetration testing to identify vulnerabilities in the organization’s web applications and infrastructure, followed by remediation of those vulnerabilities.</p>
+            </div>
+    
+            <!-- Software Development Security Domain -->
+            <div class="domain-item">
+                <h2>Software Development Security</h2>
+                <p>Software Development Security ensures that security is integrated throughout the software development lifecycle (SDLC). It focuses on secure coding practices, threat modeling, and regular security testing to prevent vulnerabilities in software applications.</p>
+                <p><b>Example: </b>Conducting security code reviews during the development phase to ensure that common vulnerabilities such as SQL injection and cross-site scripting (XSS) are mitigated.</p>
+            </div>
+        </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
