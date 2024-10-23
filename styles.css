@@ -3,10 +3,11 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Hide scroll bars */
+    overflow-y: scroll; /* Allows vertical scrolling */
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
+
 
 /* Canvas matrix styling */
 #matrixCanvas {
